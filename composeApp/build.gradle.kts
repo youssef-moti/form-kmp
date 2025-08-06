@@ -35,8 +35,10 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+
         }
         commonMain.dependencies {
+            implementation(projects.library)
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
